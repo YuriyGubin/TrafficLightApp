@@ -17,14 +17,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        greenView.layer.cornerRadius = 60
-        yellowView.layer.cornerRadius = 60
-        redView.layer.cornerRadius = 60
+        greenView.layer.cornerRadius = 65
+        yellowView.layer.cornerRadius = 65
+        redView.layer.cornerRadius = 65
         switchButton.layer.cornerRadius = 10
-        
-        redView.alpha = 0.3
-        yellowView.alpha = 0.3
-        greenView.alpha = 0.3
     }
 
     @IBAction func switchButtonTapped() {
