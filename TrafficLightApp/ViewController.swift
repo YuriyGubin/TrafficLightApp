@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var greenView: UIView!
     @IBOutlet var yellowView: UIView!
     @IBOutlet var redView: UIView!
@@ -17,12 +17,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redView.layer.cornerRadius = redView.frame.height / 2
+        redView.layer.cornerRadius = redView.frame.width / 2
         yellowView.layer.cornerRadius = yellowView.frame.width / 2
         greenView.layer.cornerRadius = greenView.frame.width / 2
         switchButton.layer.cornerRadius = 10
     }
-
+    
     @IBAction func switchButtonTapped() {
         if switchButton.titleLabel?.text == "START" {
             greenView.alpha = 1
@@ -40,6 +40,5 @@ class ViewController: UIViewController {
             switchButton.setTitle("NEXT", for: .normal)
         }
     }
-    
 }
 
