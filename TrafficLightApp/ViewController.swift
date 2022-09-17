@@ -24,6 +24,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func switchButtonTapped() {
+        
         if switchButton.titleLabel?.text == "START" {
             greenView.alpha = 1
         }
