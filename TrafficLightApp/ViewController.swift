@@ -17,30 +17,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        greenView.layer.cornerRadius = 65
-        yellowView.layer.cornerRadius = 65
-        redView.layer.cornerRadius = 65
+        redView.layer.cornerRadius = redView.frame.height / 2
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
+        greenView.layer.cornerRadius = greenView.frame.width / 2
         switchButton.layer.cornerRadius = 10
     }
 
     @IBAction func switchButtonTapped() {
-        if switchButton.titleLabel?.text == "Start" {
+        if switchButton.titleLabel?.text == "START" {
             greenView.alpha = 1
-            switchButton.setTitle("Next", for: .normal)
         }
         
         if redView.alpha == 1 {
             redView.alpha = 0.3
             yellowView.alpha = 1
-            switchButton.setTitle("Next", for: .normal)
         } else if yellowView.alpha == 1 {
             yellowView.alpha = 0.3
             greenView.alpha = 1
-            switchButton.setTitle("Next", for: .normal)
-        } else if greenView.alpha == 1 {
+        } else {
             greenView.alpha = 0.3
             redView.alpha = 1
-            switchButton.setTitle("Next", for: .normal)
+            switchButton.setTitle("NEXT", for: .normal)
         }
     }
     
