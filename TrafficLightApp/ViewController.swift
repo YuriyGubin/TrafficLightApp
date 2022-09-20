@@ -51,12 +51,13 @@ class ViewController: UIViewController {
     @IBOutlet var greenView: UIView!
     @IBOutlet var yellowView: UIView!
     @IBOutlet var redView: UIView!
+    
     @IBOutlet var switchButton: UIButton!
     
     @IBOutlet var redGradientView: UIView!
     @IBOutlet var yellowGradientView: UIView!
-    
     @IBOutlet var greenGradientView: UIView!
+    
     override func viewDidLayoutSubviews() {
         redView.layer.cornerRadius = redView.frame.size.width / 2
         yellowView.layer.cornerRadius = yellowView.frame.size.width / 2
@@ -85,9 +86,9 @@ class ViewController: UIViewController {
             redView.alpha = 0.3
             yellowView.alpha = 1
             
-            redView.isHidden = false
-            yellowView.isHidden = true
-            greenView.isHidden = false
+//            redView.isHidden = false
+//            yellowView.isHidden = true
+//            greenView.isHidden = false
             
             redGradientView.isHidden = true
             yellowGradientView.isHidden = false
@@ -101,9 +102,9 @@ class ViewController: UIViewController {
             yellowView.alpha = 0.3
             greenView.alpha = 1
             
-            redView.isHidden = false
-            yellowView.isHidden = false
-            greenView.isHidden = true
+//            redView.isHidden = false
+//            yellowView.isHidden = false
+//            greenView.isHidden = true
             
             redGradientView.isHidden = true
             yellowGradientView.isHidden = true
@@ -117,9 +118,9 @@ class ViewController: UIViewController {
             greenView.alpha = 0.3
             redView.alpha = 1
             
-            redView.isHidden = true
-            yellowView.isHidden = false
-            greenView.isHidden = false
+//            redView.isHidden = true
+//            yellowView.isHidden = false
+//            greenView.isHidden = false
             
             redGradientView.isHidden = false
             yellowGradientView.isHidden = true
